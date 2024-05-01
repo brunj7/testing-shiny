@@ -41,5 +41,5 @@ test_that("{shinytest2} recording: consecutive-names-test", {
 test_that("{shinytest2} recording: upload-data-good", {
   app <- AppDriver$new(name = "upload-data-good", height = 904, width = 1332)
   app$upload_file(csv_input = "cols-and-data1.csv")
-  app$expect_values()
+  app$expect_values(output="summary_table_output") #get the id from ui.R
 })

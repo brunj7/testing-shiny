@@ -1,14 +1,5 @@
 {
-  "input": {
-    "csv_input": null,
-    "greeting_button_input": 1,
-    "name_input": ""
-  },
   "output": {
-    "greeting_output": "Please type a name, then click the Greet button.",
-    "summary_table_output": null
-  },
-  "export": {
-
+    "greeting_output": "Please type a name, then click the Greet button."
   }
 }

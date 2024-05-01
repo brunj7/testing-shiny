@@ -1,14 +1,5 @@
 {
-  "input": {
-    "csv_input": null,
-    "greeting_button_input": 2,
-    "name_input": "Eliott"
-  },
   "output": {
-    "greeting_output": "Hello Eliott!",
-    "summary_table_output": null
-  },
-  "export": {
-
+    "greeting_output": "Hello Eliott!"
   }
 }
