@@ -4,7 +4,7 @@ test_that("{shinytest2} recording: one-name-test", {
   app <- AppDriver$new(name = "one-name-test", height = 904, width = 1332)
   app$set_inputs(name_input = "Sophia")
   app$click("greeting_button_input")
-  app$expect_values()
+  app$expect_values(output="greeting_output")
 })
 
 
@@ -15,14 +15,14 @@ test_that("{shinytest2} recording: two-names-test", {
   app$set_inputs(name_input = "")
   app$set_inputs(name_input = "Eliott")
   app$click("greeting_button_input")
-  app$expect_values()
+  app$expect_values(output="greeting_output")
 })
 
 
 test_that("{shinytest2} recording: no-name-test", {
   app <- AppDriver$new(name = "no-name-test", height = 904, width = 1332)
   app$click("greeting_button_input")
-  app$expect_values()
+  app$expect_values(output="greeting_output")
 })
 
 
