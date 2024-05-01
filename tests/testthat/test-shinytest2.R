@@ -36,3 +36,10 @@ test_that("{shinytest2} recording: consecutive-names-test", {
   app$click("greeting_button_input")
   app$expect_values()
 })
+
+
+test_that("{shinytest2} recording: upload-data-good", {
+  app <- AppDriver$new(name = "upload-data-good", height = 904, width = 1332)
+  app$upload_file(csv_input = "cols-and-data1.csv")
+  app$expect_values()
+})
