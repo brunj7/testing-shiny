@@ -34,7 +34,7 @@ test_that("{shinytest2} recording: consecutive-names-test", {
   app$set_inputs(name_input = "")
   app$set_inputs(name_input = "Eliott")
   app$click("greeting_button_input")
-  app$expect_values()
+  app$expect_values(output="greeting_output")
 })
 
 
