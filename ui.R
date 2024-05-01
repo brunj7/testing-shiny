@@ -84,11 +84,7 @@ ui <- fluidPage(
       sidebarPanel(
         
         # penguin spp pickerInput -----
-        pickerInput(inputId = "penguinSpp_scatterplot_input", label = "Select species:",
-                    choices = c("Adelie", "Chinstrap", "Gentoo"),
-                    selected = c("Adelie", "Chinstrap", "Gentoo"),
-                    options = pickerOptions(actionsBox = TRUE),
-                    multiple = TRUE), # END penguin spp pickerInput
+        penguinSpp_pickerInput(inputId = "penguinSpp_scatterplot_input")
         
       ), # END plot sidebarPanel
       
